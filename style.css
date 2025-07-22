@@ -1,0 +1,103 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+#pregunta-texto {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+.fila-opciones {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.opcion {
+    flex: 1 1 45%;
+    background: linear-gradient(to right, #444, #333);
+    color: #ffffff;
+    border: 2px solid #666;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+    min-width: 140px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.opcion:hover {
+    background: linear-gradient(to right, #555, #444);
+    transform: scale(1.03);
+}
+
+.correcta {
+    background: linear-gradient(to right, #43e97b, #38f9d7) !important;
+    color: #000;
+    border-color: #81c784;
+}
+
+.incorrecta {
+    background: linear-gradient(to right, #ff6a6a, #ff4e50) !important;
+    color: white;
+    border-color: #ef5350;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+#btn-siguiente {
+    margin-top: 20px;
+    background: linear-gradient(to right, #2196f3, #21cbf3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    box-shadow: 0 0 10px rgba(33, 203, 243, 0.3);
+}
+
+#btn-siguiente:hover {
+    background: linear-gradient(to right, #1976d2, #1e88e5);
+}
+
+.mensaje-final {
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
